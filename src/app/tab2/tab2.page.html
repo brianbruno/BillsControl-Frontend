@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Adicionar contas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form onsubmit="processForm(event)">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Nome da conta <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Data de vencimento <ion-text color="danger">*</ion-text></ion-label>
+        <ion-datetime displayFormat="DD MM YY" placeholder=" "></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Número do código de barras</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Adicionar</ion-button>
+    </div>
+  </form>
+</ion-content>
